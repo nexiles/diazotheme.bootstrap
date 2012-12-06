@@ -1,13 +1,42 @@
 
+/*--------------------NEXILES THEME----------------------------------*/
+
 body {
+    background: -moz-radial-gradient(center center , #FFFFFF, #848587) repeat fixed 0 0 transparent;
+    color:#848587;
 }
+
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
+    box-shadow: 0 5px 5px rgba(118, 180, 31, 0.4);
+}
+
+#container{
+    background-color: #FFFFFF;
+    opacity: 0.9;
+    padding: 20px;
+    -moz-box-shadow:    0 5px 5px rgba(132, 133, 135, 0.4);
+    -webkit-box-shadow: 0 5px 5px rgba(132, 133, 135, 0.4);
+    box-shadow:         0 5px 5px rgba(132, 133, 135, 0.4);
+    border-bottom: 20px solid #76B41F !important;
+    margin-top: 100px;
+}
+
+.nav-tabs {
+    border: none;
+}
+
+.breadcrumb{
+    background-color: transparent;
+}
+
+.breadcrumbSeparator {
+      content: "|"; 
+}
+/*------------------------------------------------------------------*/
+
 
 .radio-widget {
     display:inline;
-}
-
-#header {
-    margin:50px auto 0;
 }
 
 #main {
@@ -59,7 +88,6 @@ label .required {
 }
 #left-column-content {
     padding:0 10px;
-    border-right:1px solid #eee;
     vertical-align:top;
 }
 
@@ -78,7 +106,6 @@ label .required {
 }
 
 #right-column .portlet-header, #left-column .portlet-header {
-    border-bottom:1px solid #ddd;
     margin-bottom:10px;
     line-height:27px;
 }
