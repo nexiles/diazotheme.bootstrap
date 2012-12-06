@@ -3,6 +3,7 @@
 
 body {
     background: -moz-radial-gradient(center center , #FFFFFF, #848587) repeat fixed 0 0 transparent;
+    background: -webkit-radial-gradient(center center , #FFFFFF, #848587) repeat fixed 0 0 transparent;
     color:#848587;
 }
 
@@ -19,6 +20,7 @@ body {
     box-shadow:         0 5px 5px rgba(132, 133, 135, 0.4);
     border-bottom: 20px solid #76B41F !important;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .nav-tabs {
