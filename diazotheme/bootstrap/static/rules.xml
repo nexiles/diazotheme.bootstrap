@@ -58,11 +58,11 @@
     <notheme css:if-content="body.popup"/>
     -->
 
-    <rules css:if-content="body.section-home-page">
-            <drop css:content=".documentFirstHeading"/>
-            <drop css:content=".documentDescription"/>
-    </rules>
-    
+    <!-- hide title and description per default.  The title will
+         be included in the nav portlet. -->
+    <drop css:content=".documentFirstHeading"/>
+    <drop css:content=".documentDescription"/>
+
     <rules css:if-content="#visual-portal-wrapper">
 
         <replace theme="//*[@id='logo']/h1" content="//*[@id='content']/h1"/>
