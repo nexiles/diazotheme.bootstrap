@@ -182,10 +182,23 @@
     <replace css:theme-children=".breadcrumb">
         <xsl:for-each css:select="#portal-breadcrumbs > span">
             <li>
-                <xsl:copy-of select="node()"/>
+                <xsl:for-each select="./a">
+                    <xsl:copy-of select="."/>
+                </xsl:for-each>
+                <xsl:for-each select="./span">
+                    <xsl:choose>
+                      <xsl:when css:test=".breadcrumbSeparator">
+                        <span class="breadcrumbSeparator">| </span>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <xsl:copy-of select="."/>
+                      </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:for-each>
             </li>
         </xsl:for-each>
     </replace>
+
 
     <append css:theme=".footer" css:content-children="#portal-footer"/>
     <append css:theme=".footer" css:content="#portal-colophon"/>
