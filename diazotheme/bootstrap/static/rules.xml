@@ -188,7 +188,7 @@
                 <xsl:for-each select="./span">
                     <xsl:choose>
                       <xsl:when css:test=".breadcrumbSeparator">
-                        <span class="breadcrumbSeparator">| </span>
+                        <span class="breadcrumbSeparator">&#8226; </span>
                       </xsl:when>
                       <xsl:otherwise>
                         <xsl:copy-of select="."/>
