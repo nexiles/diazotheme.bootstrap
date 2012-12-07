@@ -243,74 +243,65 @@
             </div>
         </replace>
 
-        <replace css:theme-children="#portletBelowContentA">
-            <xsl:for-each css:select=".BelowPortletManager1 .portletWrapper">
-                <xi:include href="portlet-rules.xml"/>
-            </xsl:for-each>
-            <div style="display:hidden">.</div>
-        </replace>
-        <replace css:theme-children="#portletBelowContentB">
-            <xsl:for-each css:select=".BelowPortletManager2 .portletWrapper">
-                <xi:include href="portlet-rules.xml"/>
-            </xsl:for-each>
-            <div style="display:hidden">.</div>
-        </replace>
-        <replace css:theme-children="#portletBelowContentC">
-            <xsl:for-each css:select=".BelowPortletManager3 .portletWrapper">
-                <xi:include href="portlet-rules.xml"/>
-            </xsl:for-each>
-            <div style="display:hidden">.</div>
-        </replace>
-        <replace css:theme-children="#portletBelowContentD">
-            <xsl:for-each css:select=".BelowPortletManager4 .portletWrapper">
-                <xi:include href="portlet-rules.xml"/>
-            </xsl:for-each>
-        </replace>
-        <replace css:theme-children="#portletFooterA">
-            <xsl:for-each css:select=".FooterPortletManager1 .portletWrapper">
-                <xi:include href="portlet-rules.xml"/>
-            </xsl:for-each>
-            <div style="display:hidden">.</div>
-        </replace>
+    <replace css:theme-children="#portletBelowContentA">
+        <xsl:for-each css:select=".BelowPortletManager1 .portletWrapper">
+            <xi:include href="portlet-rules.xml"/>
+        </xsl:for-each>
+    </replace>
+    <replace css:theme-children="#portletBelowContentB">
+        <xsl:for-each css:select=".BelowPortletManager2 .portletWrapper">
+            <xi:include href="portlet-rules.xml"/>
+        </xsl:for-each>
+    </replace>
+    <replace css:theme-children="#portletBelowContentC">
+        <xsl:for-each css:select=".BelowPortletManager3 .portletWrapper">
+            <xi:include href="portlet-rules.xml"/>
+        </xsl:for-each>
+    </replace>
+    <replace css:theme-children="#portletBelowContentD">
+        <xsl:for-each css:select=".BelowPortletManager4 .portletWrapper">
+            <xi:include href="portlet-rules.xml"/>
+        </xsl:for-each>
+    </replace>
+    <replace css:theme-children="#portletFooterA">
+        <xsl:for-each css:select=".FooterPortletManager1 .portletWrapper">
+            <xi:include href="portlet-rules.xml"/>
+        </xsl:for-each>
+    </replace>
 
-        <replace css:theme-children="#portletFooterB">
-            <xsl:for-each css:select=".FooterPortletManager2 .portletWrapper">
-                <xi:include href="portlet-rules.xml"/>
-            </xsl:for-each>
-            <div style="display:hidden">.</div>
-        </replace>
+    <replace css:theme-children="#portletFooterB">
+        <xsl:for-each css:select=".FooterPortletManager2 .portletWrapper">
+            <xi:include href="portlet-rules.xml"/>
+        </xsl:for-each>
+    </replace>
 
-        <replace css:theme-children="#portletFooterC">
-            <xsl:for-each css:select=".FooterPortletManager3 .portletWrapper">
-                <xi:include href="portlet-rules.xml"/>
-            </xsl:for-each>
-            <div style="display:hidden">.</div>
-        </replace>
+    <replace css:theme-children="#portletFooterC">
+        <xsl:for-each css:select=".FooterPortletManager3 .portletWrapper">
+            <xi:include href="portlet-rules.xml"/>
+        </xsl:for-each>
+    </replace>
 
 
-        <replace css:theme-children="#portletFooterD">
-            <xsl:for-each css:select=".FooterPortletManager4 .portletWrapper">
-                <xi:include href="portlet-rules.xml"/>
-            </xsl:for-each>
-            <div style="display:hidden">.</div>
-        </replace>
+    <replace css:theme-children="#portletFooterD">
+        <xsl:for-each css:select=".FooterPortletManager4 .portletWrapper">
+            <xi:include href="portlet-rules.xml"/>
+        </xsl:for-each>
+    </replace>
 
-        <replace css:theme-children="#portletFooterE">
-            <xsl:for-each css:select=".FooterPortletManager5 .portletWrapper">
-                <xi:include href="portlet-rules.xml"/>
-            </xsl:for-each>
-            <div style="display:hidden">.</div>
-        </replace>
+    <replace css:theme-children="#portletFooterE">
+        <xsl:for-each css:select=".FooterPortletManager5 .portletWrapper">
+            <xi:include href="portlet-rules.xml"/>
+        </xsl:for-each>
+    </replace>
 
 
-        <replace css:theme-children="#portletFooterF">
-            <xsl:for-each css:select=".FooterPortletManager6 .portletWrapper">
-                <xi:include href="portlet-rules.xml"/>
-            </xsl:for-each>
-            <div style="display:hidden">.</div>
-        </replace>
+    <replace css:theme-children="#portletFooterF">
+        <xsl:for-each css:select=".FooterPortletManager6 .portletWrapper">
+            <xi:include href="portlet-rules.xml"/>
+        </xsl:for-each>
+    </replace>
 
-        <xi:include href="facetednavigation-rules.xml"/>
-        <append css:theme="#site-scripts" css:content="#portal-footer-wrapper > div > script"/>
+    <xi:include href="facetednavigation-rules.xml"/>
+    <append css:theme="#site-scripts" css:content="#portal-footer-wrapper > div > script"/>
     </rules>
 </rules>
