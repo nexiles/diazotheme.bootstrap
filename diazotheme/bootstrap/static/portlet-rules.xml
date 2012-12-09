@@ -13,7 +13,7 @@
             <h4>
                 <!-- for the nav portlet, we want to have the content title here -->
                 <xsl:if test="dl[contains(@class,'portletNavigationTree')]">
-                    <xsl:value-of select="//*[@id='parent-fieldname-title']"/>
+                    <xsl:value-of select="//*[@class='documentFirstHeading']"/>
                 </xsl:if>
                 <xsl:if test="not(dl[contains(@class,'portletNavigationTree')])">
                     <xsl:copy-of select="dl/dt/node()"/>
