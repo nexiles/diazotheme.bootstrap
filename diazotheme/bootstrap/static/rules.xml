@@ -5,6 +5,14 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xi="http://www.w3.org/2001/XInclude"
   >
+
+  <rules css:if-content=".portaltype-fullscreenpage">
+    <theme href="carousel.html"/>
+    <drop content="/html/head/link"/>
+    <replace css:theme="#myCarousel" css:content-children=".AbovePortletManager2"/>
+    <replace css:theme="#content-core" css:content="#content-core"/>
+  </rules>
+
   <replace theme="/html/head/title" content="/html/head/title" />
 
   <theme href="base.html" css:if-content="#visual-portal-wrapper"/>
@@ -307,5 +315,5 @@
     <drop css:content="li.navTreeItem a img" />
     <drop css:content="div.RatingViewlet" />
     <drop css:content="div.thumb-rating" />
-
   </rules>
+
