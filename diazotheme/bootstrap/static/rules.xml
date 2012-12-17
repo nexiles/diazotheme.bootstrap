@@ -10,6 +10,7 @@
     <theme href="carousel.html"/>
     <drop content="/html/head/link"/>
     <drop css:theme=".navbar-wrapper" />
+    <drop css:theme="#portlets-below-content" css:if-content="#drop-marketing" />
     <replace css:theme="#myCarousel" css:content-children=".AbovePortletManager2"/>
     <replace css:theme="#content-core" css:content="#content-core"/>
   </rules>
