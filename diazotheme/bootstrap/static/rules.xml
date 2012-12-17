@@ -9,6 +9,7 @@
   <rules css:if-content=".portaltype-fullscreenpage">
     <theme href="carousel.html"/>
     <drop content="/html/head/link"/>
+    <drop css:theme=".navbar-wrapper" />
     <replace css:theme="#myCarousel" css:content-children=".AbovePortletManager2"/>
     <replace css:theme="#content-core" css:content="#content-core"/>
   </rules>
